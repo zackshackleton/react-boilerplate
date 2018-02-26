@@ -22,6 +22,10 @@ module.exports = {
             plugins: ['@babel/plugin-proposal-class-properties']
           }
         }
+      },
+      {
+        test: /\.less$/i,
+        use: ['style-loader', 'css-loader', 'less-loader'],
       }
     ]
   },
